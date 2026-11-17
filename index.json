@@ -14,6 +14,13 @@
 	"content": "This section documents the 12-week AWS learning and internship worklog, covering the period from 14 September 2026 to 6 December 2026. It summarizes the weekly objectives, tasks, learning outcomes, and reference materials in English.\nThe overall internship period continues until 14 December 2026; these 12 weekly entries do not represent the entire internship period.\nWeekly Overview Week 1: Introduction to AWS and Amazon EC2\nWeek 2: AWS Identity and Access Management (IAM)\nWeek 3: Amazon Virtual Private Cloud (Amazon VPC)\nWeek 4: Amazon Simple Storage Service (Amazon S3)\nWeek 5: Amazon Relational Database Service (Amazon RDS)\nWeek 6: Elastic Load Balancing (ELB) and Auto Scaling\nWeek 7: AWS CloudFormation and Infrastructure as Code\nWeek 8: CI/CD with AWS CodeCommit, CodeBuild, CodeDeploy, and CodePipeline\nWeek 9: Monitoring and Logging with Amazon CloudWatch and AWS CloudTrail\nWeek 10: Serverless Computing with AWS Lambda and Amazon API Gateway\nWeek 11: Containerization with Docker, Amazon ECR, and Amazon ECS\nWeek 12: Final Review and AWS Solution Deployment\n"
 },
 {
+	"uri": "https://Tran-Phu-Security.github.io/aws-workshop/",
+	"title": "Internship Report",
+	"tags": [],
+	"description": "",
+	"content": "Internship Report Student Information: Full Name: Tran Minh Phu\nPhone Number: 0398404260\nEmail: tphu0605@gmail.com\nUniversity: FPT University\nMajor: Information Assurance\nClass: FALL2026\nInternship Company: Amazon Web Services Viet Nam Company Limited\nInternship Position: Workforce Bootcamp - First Cloud AI Journey\nInternship Duration: From 14/09/2026 to 14/12/2026\nReport Content Worklog Proposal BlogsPosted Events Participated Workshop Self-evaluation Sharing and Feedback "
+},
+{
 	"uri": "https://Tran-Phu-Security.github.io/aws-workshop/3-blogsposted/3.1-blog1/",
 	"title": "Blog 1",
 	"tags": [],
@@ -250,13 +257,6 @@
 	"tags": [],
 	"description": "",
 	"content": " âš ï¸ Note: The following information is for reference purposes only. Please do not copy verbatim for your own report, including this warning.\nWeek 12 Objectives: Connect and get acquainted with members of First Cloud AI Journey. Understand basic AWS services, how to use the console \u0026amp; CLI. Tasks to be carried out this week: Day Task Start Date Completion Date Reference Material 2 - Get acquainted with FCAJ members - Read and take note of internship unit rules and regulations 08/11/2025 08/11/2025 3 - Learn about AWS and its types of services + Compute + Storage + Networking + Database + \u0026hellip; 08/12/2025 08/12/2025 https://cloudjourney.awsstudygroup.com/ 4 - Create AWS Free Tier account - Learn about AWS Console \u0026amp; AWS CLI - Practice: + Create AWS account + Install \u0026amp; configure AWS CLI + How to use AWS CLI 08/13/2025 08/13/2025 https://cloudjourney.awsstudygroup.com/ 5 - Learn basic EC2: + Instance types + AMI + EBS + \u0026hellip; - SSH connection methods to EC2 - Learn about Elastic IP 08/14/2025 08/15/2025 https://cloudjourney.awsstudygroup.com/ 6 - Practice: + Launch an EC2 instance + Connect via SSH + Attach an EBS volume 08/15/2025 08/15/2025 https://cloudjourney.awsstudygroup.com/ Week 12 Achievements: Understood what AWS is and mastered the basic service groups:\nCompute Storage Networking Database \u0026hellip; Successfully created and configured an AWS Free Tier account.\nBecame familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.\nInstalled and configured AWS CLI on the computer, including:\nAccess Key Secret Key Default Region \u0026hellip; Used AWS CLI to perform basic operations such as:\nCheck account \u0026amp; configuration information Retrieve the list of regions View EC2 service Create and manage key pairs Check information about running services \u0026hellip; Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.\n\u0026hellip;\n"
-},
-{
-	"uri": "https://Tran-Phu-Security.github.io/aws-workshop/",
-	"title": "",
-	"tags": [],
-	"description": "",
-	"content": "-\u0026ndash;\ntitle: \u0026ldquo;Internship Report\u0026rdquo; date: 2026-05-11 weight: 1 chapter: false Internship Report Student Information: Full Name: Tran Minh Phu\nPhone Number: 0398404260\nEmail: tphu0605@gmail.com\nUniversity: FPT University\nMajor: Information Assurance\nClass: FALL2026\nInternship Company: Amazon Web Services Viet Nam Company Limited\nInternship Position: Workforce Bootcamp - First Cloud AI Journey\nInternship Duration: From 14/09/2026 to 14/12/2026\nReport Content Worklog Proposal BlogsPosted Events Participated Workshop Self-evaluation Sharing and Feedback "
 },
 {
 	"uri": "https://Tran-Phu-Security.github.io/aws-workshop/categories/",
