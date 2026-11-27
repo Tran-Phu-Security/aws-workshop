@@ -12,7 +12,6 @@ home = [ "HTML", "RSS", "JSON"]
 
 [params]
   themeVariant = "workshop"
-  editURL = "https://github.com/Tran-Phu-Security/aws-workshop/tree/main/content/"
   description = "Báo cáo thực tập AWS Cloud - Trần Minh Phú (14/09/2026 - 14/12/2026)"
   author = "Trần Minh Phú"
   showVisitedLinks = true

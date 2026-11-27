@@ -1,58 +1,36 @@
 ---
-title: "Worklog Tuần 12"
-date: 2024-01-01
-weight: 2
+title: "Tuần 12: Tìm hiểu về bảo mật và quản trị trên AWS"
+date: 2026-11-30
+weight: 12
 chapter: false
-pre: " <b> 1.12 </b> "
+pre: " <b> 1.12. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
 
 ### Mục tiêu tuần 12:
 
-* Kết nối, làm quen với các thành viên trong First Cloud AI Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+* Hiểu các khái niệm cơ bản về bảo mật và quản trị trên AWS.
+* Tìm hiểu AWS Identity and Access Management (IAM) và các cơ chế kiểm soát quyền truy cập.
+* Tìm hiểu các dịch vụ bảo mật AWS và vai trò của chúng trong việc bảo vệ tài nguyên đám mây.
+* Hiểu cách giám sát, phát hiện và xử lý các mối đe dọa bảo mật tiềm ẩn.
+* Tìm hiểu các phương pháp bảo mật tốt nhất khi quản lý tài nguyên AWS.
 
 ### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCAJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
 
+| Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
+| --- | --- | --- | --- | --- |
+| Thứ Hai | - Ôn tập các kiến thức nền tảng về bảo mật AWS. <br> - Tìm hiểu IAM users, groups, roles và policies. <br> - Tìm hiểu nguyên tắc cấp quyền tối thiểu (Least Privilege). | 30/11/2026 | 30/11/2026 | [IAM Workshop](https://000002.awsfcaj.com/) |
+| Thứ Ba | - Tìm hiểu IAM policies và quản lý quyền truy cập. <br> - Khám phá cơ chế kiểm soát truy cập dựa trên vai trò và permission boundaries. <br> - Ôn tập các phương pháp quản lý quyền truy cập phổ biến. | 01/12/2026 | 01/12/2026 | [IAM Permission Boundaries](https://000030.awsfcaj.com/) |
+| Thứ Tư | - Tìm hiểu AWS Key Management Service (KMS). <br> - Tìm hiểu về khóa mã hóa và bảo vệ dữ liệu. <br> - Tìm hiểu các khái niệm cơ bản về mã hóa dữ liệu khi lưu trữ. <br> - Hiểu cách AWS KMS hỗ trợ mã hóa và bảo vệ dữ liệu được lưu trữ trên Amazon S3. | 02/12/2026 | 02/12/2026 | [AWS KMS](https://000033.awsfcaj.com/) |
+| Thứ Năm | - Tìm hiểu AWS Web Application Firewall (WAF). <br> - Hiểu cách lọc lưu lượng truy cập web để bảo vệ ứng dụng. <br> - Khám phá các khái niệm cơ bản về bảo vệ ứng dụng web. | 03/12/2026 | 03/12/2026 | [AWS WAF](https://000026.awsfcaj.com/) |
+| Thứ Sáu | - Tìm hiểu các dịch vụ giám sát bảo mật AWS, bao gồm GuardDuty và Security Hub. <br> - Tìm hiểu về phát hiện mối đe dọa và các phát hiện bảo mật. <br> - Nắm được vai trò của giám sát bảo mật tập trung. | 04/12/2026 | 04/12/2026 | [Amazon GuardDuty](https://000098.awsfcaj.com/) / [AWS Security Hub](https://000018.awsfcaj.com/) |
+| Thứ Bảy – Chủ Nhật | - Ôn tập các phương pháp bảo mật tốt nhất trên AWS. <br> - Tổng hợp kiến thức về IAM, mã hóa, bảo vệ ứng dụng và phát hiện mối đe dọa. <br> - Hệ thống hóa kiến thức đã tìm hiểu trong tuần. | 05/12/2026 | 06/12/2026 | [The First Cloud Journey](https://cloudjourney.awsfcaj.com/) |
 
 ### Kết quả đạt được tuần 12:
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Đã tạo và cấu hình AWS Free Tier account thành công.
-
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
-
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
-
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
-
-
+* Hiểu rõ hơn các kiến thức nền tảng về bảo mật và quản trị trên AWS.
+* Tìm hiểu được IAM users, groups, roles, policies và nguyên tắc cấp quyền tối thiểu.
+* Khám phá cơ chế quản lý quyền truy cập và kiểm soát phân quyền.
+* Hiểu vai trò của AWS KMS trong mã hóa và bảo vệ dữ liệu.
+* Tìm hiểu cách AWS WAF hỗ trợ bảo vệ ứng dụng web thông qua việc lọc lưu lượng truy cập.
+* Làm quen với các dịch vụ giám sát bảo mật và phát hiện mối đe dọa như Amazon GuardDuty và AWS Security Hub.
+* Nâng cao nhận thức về các phương pháp bảo mật tốt nhất và tầm quan trọng của việc giám sát liên tục tài nguyên AWS.

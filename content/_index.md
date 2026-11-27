@@ -5,36 +5,39 @@ weight: 1
 chapter: false
 ---
 
-    
+
+
 # Internship Report
 
 ### Student Information:
-&emsp; **Full Name:** Tran Minh Phu
 
-&emsp; **Phone Number:** 0398404260
+  **Full Name:** Tran Minh Phu
 
-&emsp; **Email:** tphu0605@gmail.com
+  **Phone Number:** 0398404260
 
-&emsp; **University:** FPT University 
+  **Email:** tphu0605@gmail.com
 
-&emsp; **Major:** Information Assurance
+  **University:** FPT University
 
-&emsp; **Class:** FALL2026
+  **Major:** Information Assurance
 
-&emsp; **Internship Company:** Amazon Web Services Viet Nam Company Limited
+  **Class:** FALL2026
 
-&emsp; **Internship Position:** Workforce Bootcamp - First Cloud AI Journey
+  **Internship Company:** Amazon Web Services Viet Nam Company Limited
 
-&emsp; **Internship Duration:** From 14/09/2026 to 14/12/2026
+  **Internship Position:** Workforce Bootcamp - First Cloud AI Journey
 
-![Your profile picture](/images/avatar.png)
+  **Internship Duration:** From 14/09/2026 to 14/12/2026
+
+![Your profile picture](/aws-workshop/images/avatar.png)
 
 ### Report Content
 
-1.  [Worklog](1-Worklog/)
-2.  [Proposal](2-Proposal/)
-3.  [BlogsPosted](3-BlogsPosted/)
-4.  [Events Participated](4-EventParticipated/)
-5.  [Workshop](5-Workshop/)
-6.  [Self-evaluation](6-Self-evaluation/)
-7.  [Sharing and Feedback](7-Feedback/)
+1. [Worklog](1-Worklog/)
+2. [Proposal](2-Proposal/)
+3. [BlogsPosted](3-BlogsPosted/)
+4. [Events Participated](4-EventParticipated/)
+5. [Workshop](5-Workshop/)
+6. [Self-evaluation](6-Self-evaluation/)
+7. [Sharing and Feedback](7-Feedback/)
+

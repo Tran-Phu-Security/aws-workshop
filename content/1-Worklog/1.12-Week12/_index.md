@@ -1,57 +1,36 @@
----
-title: "Week 12 Worklog"
-date: 2024-01-01
-weight: 2
+﻿---
+title: "Week 12: Exploring AWS Security and Governance"
+date: 2026-11-30
+weight: 12
 chapter: false
 pre: " <b> 1.12. </b> "
 ---
-{{% notice warning %}} 
-⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
-{{% /notice %}}
-
 
 ### Week 12 Objectives:
 
-* Connect and get acquainted with members of First Cloud AI Journey.
-* Understand basic AWS services, how to use the console & CLI.
+* Understand the fundamental concepts of security and governance in AWS.
+* Explore AWS Identity and Access Management (IAM) and access control mechanisms.
+* Learn about AWS security services and their roles in protecting cloud resources.
+* Understand how to monitor, detect, and respond to potential security threats.
+* Explore security best practices for managing AWS resources.
 
 ### Tasks to be carried out this week:
-| Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCAJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
 
+| Day | Task | Start Date | Completion Date | Reference Material |
+| --- | --- | --- | --- | --- |
+| Monday | - Review AWS security fundamentals. <br> - Explore IAM users, groups, roles, and policies. <br> - Understand the principle of least privilege. | 30/11/2026 | 30/11/2026 | [IAM Workshop](https://000002.awsfcaj.com/) |
+| Tuesday | - Learn about IAM policies and permission management. <br> - Explore role-based access control and permission boundaries. <br> - Review common access management practices. | 01/12/2026 | 01/12/2026 | [IAM Permission Boundaries](https://000030.awsfcaj.com/) |
+| Wednesday | - Explore AWS Key Management Service (KMS). <br> - Understand encryption keys and data protection. <br> - Learn the basic concepts of encryption at rest. <br> - Understand how AWS KMS helps encrypt and protect data stored in Amazon S3. | 02/12/2026 | 02/12/2026 | [AWS KMS](https://000033.awsfcaj.com/) |
+| Thursday | - Learn about AWS Web Application Firewall (WAF). <br> - Understand how web traffic filtering helps protect applications. <br> - Explore basic web application protection concepts. | 03/12/2026 | 03/12/2026 | [AWS WAF](https://000026.awsfcaj.com/) |
+| Friday | - Explore AWS security monitoring services, including GuardDuty and Security Hub. <br> - Understand threat detection and security findings. <br> - Review the role of centralized security monitoring. | 04/12/2026 | 04/12/2026 | [Amazon GuardDuty](https://000098.awsfcaj.com/) / [AWS Security Hub](https://000018.awsfcaj.com/) |
+| Saturday – Sunday | - Review AWS security best practices. <br> - Summarize IAM, encryption, application protection, and threat detection. <br> - Consolidate the knowledge acquired during the week. | 05/12/2026 | 06/12/2026 | [The First Cloud Journey](https://cloudjourney.awsfcaj.com/) |
 
 ### Week 12 Achievements:
 
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Successfully created and configured an AWS Free Tier account.
-
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
-
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
-
-* Used AWS CLI to perform basic operations such as:
-
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
-
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...
+* Developed a better understanding of AWS security and governance fundamentals.
+* Learned about IAM users, groups, roles, policies, and the principle of least privilege.
+* Explored permission management and access control mechanisms.
+* Understood the role of AWS KMS in encryption and data protection.
+* Learned how AWS WAF helps protect web applications by filtering incoming traffic.
+* Became familiar with security monitoring and threat detection services such as Amazon GuardDuty and AWS Security Hub.
+* Improved understanding of AWS security best practices and the importance of continuous monitoring.
