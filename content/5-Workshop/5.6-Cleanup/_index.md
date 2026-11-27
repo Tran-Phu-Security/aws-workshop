@@ -1,32 +1,68 @@
 ---
-title : "Clean up"
-date : 2024-01-01
+title : "Clean-up"
+date : 2026-11-27
 weight : 6
 chapter : false
 pre : " <b> 5.6. </b> "
 ---
-Congratulations on completing this workshop! 
-In this workshop, you learned architecture patterns for accessing Amazon S3 without using the Public Internet. 
-+ By creating a gateway endpoint, you enabled direct communication between EC2 resources and Amazon S3, without traversing an Internet Gateway. 
-+ By creating an interface endpoint you extended S3 connectivity to resources running in your on-premises data center via AWS Site-to-Site VPN or Direct Connect. 
 
-#### clean up
-1. Navigate to Hosted Zones on the left side of Route 53 console. Click the name of *s3.us-east-1.amazonaws.com* zone. Click Delete and confirm deletion by typing delete. 
+The resources used in this workshop can keep generating charges if left in place, especially provisioned DynamoDB capacity, S3 data and CloudWatch logs. Once testing is complete, delete them in the order below. The order works from the outer layers inward, which avoids errors caused by resources that are still referenced.
 
-![hosted zone](/images/5-Workshop/5.6-Cleanup/delete-zone.png)
+#### Step 1: Delete API Gateway
 
-2. Disassociate the Route 53 Resolver Rule - myS3Rule from "VPC Onprem" and Delete it. 
+1. Open **API Gateway** and choose the HTTP API of the system.
+2. Choose **Actions**, choose **Delete**, then confirm.
 
-![hosted zone](/images/5-Workshop/5.6-Cleanup/vpc.png)
+#### Step 2: Delete the Lambda functions
 
-4. Open the CloudFormation console  and delete the two CloudFormation Stacks that you created for this lab:
-+ PLOnpremSetup
-+ PLCloudSetup
+1. Open **Lambda**.
+2. Select the four functions `IngestLambda`, `StatusLambda`, `FastDetectWorker` and `FileDetectWorker`.
+3. Choose **Actions**, choose **Delete**, enter `confirm`, then confirm.
 
-![delete stack](/images/5-Workshop/5.6-Cleanup/delete-stack.png)
+Deleting a function also deletes the event source mappings that connect it to SQS.
 
-5. Delete S3 buckets
-+ Open S3 console
-+ Choose the bucket we created for the lab, click and confirm empty. Click delete and confirm delete.
+#### Step 3: Delete the SQS queues
 
-![delete s3](/images/5-Workshop/5.6-Cleanup/delete-s3.png)
+1. Open **SQS**.
+2. Select the three queues `phishing-fast-queue`, `phishing-file-queue` and `phishing-dlq` one at a time.
+3. Choose **Delete**, enter `delete`, then confirm.
+
+#### Step 4: Delete the DynamoDB tables
+
+1. Open **DynamoDB** and choose **Tables**.
+2. Select the `PhishingScanJobs` table, choose **Delete**, then confirm.
+3. Repeat for the `PhishingScanCache` table.
+
+#### Step 5: Delete the S3 buckets
+
+A bucket must be empty before it can be deleted.
+
+1. Open **S3** and choose the upload bucket (the `RAW_BUCKET` value).
+2. Choose **Empty**, enter `permanently delete`, then confirm.
+3. Choose **Delete**, enter the bucket name, then confirm.
+4. Repeat for the reports bucket (the `REPORTS_BUCKET` value).
+
+#### Step 6: Delete the IAM roles and policies
+
+1. Open **IAM** and choose **Roles**.
+2. Select the execution roles created in section 5.4.5, then choose **Delete**.
+3. Choose **Policies**, filter by **Customer managed**, then delete the policies that were created for the system.
+
+#### Step 7: Delete the Parameter Store parameters
+
+1. Open **AWS Systems Manager** and choose **Parameter Store**.
+2. Select the parameters with the `/phishing/` prefix, choose **Delete**, then confirm.
+
+This step removes the API keys stored in section 5.4.8.
+
+#### Step 8: Delete the CloudWatch log groups
+
+Log groups are not deleted together with the Lambda functions and continue to incur storage charges.
+
+1. Open **CloudWatch**, choose **Logs**, then choose **Log groups**.
+2. Type `/aws/lambda/` in the search box.
+3. Select the log groups of the four functions above, choose **Actions**, choose **Delete log group(s)**, then confirm.
+
+#### Final check
+
+Open each service above again and confirm that the resource list of the system is empty. The **Billing and Cost Management** page can be checked the following day to make sure no further charges appear.

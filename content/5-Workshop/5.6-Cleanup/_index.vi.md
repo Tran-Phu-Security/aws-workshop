@@ -1,37 +1,68 @@
 ---
 title : "Dọn dẹp tài nguyên"
-date : 2024-01-01
+date : 2026-11-27
 weight : 6
 chapter : false
 pre : " <b> 5.6. </b> "
 ---
 
-#### Dọn dẹp tài nguyên
+Các tài nguyên dùng trong workshop có thể phát sinh chi phí nếu để lại, nhất là dung lượng DynamoDB đã cấp phát, dữ liệu S3 và log CloudWatch. Sau khi hoàn tất kiểm thử, xóa theo đúng thứ tự dưới đây. Thứ tự đi từ lớp ngoài vào lớp trong để tránh lỗi do tài nguyên còn được tham chiếu.
 
-Xin chúc mừng bạn đã hoàn thành xong lab này!
-Trong lab này, bạn đã học về các mô hình kiến trúc để truy cập Amazon S3 mà không sử dụng Public Internet.
+#### Bước 1: Xóa API Gateway
 
-+ Bằng cách tạo Gateway endpoint, bạn đã cho phép giao tiếp trực tiếp giữa các tài nguyên EC2 và Amazon S3, mà không đi qua Internet Gateway.
-Bằng cách tạo Interface endpoint, bạn đã mở rộng kết nối S3 đến các tài nguyên chạy trên trung tâm dữ liệu trên chỗ của bạn thông qua AWS Site-to-Site VPN hoặc Direct Connect.
+1. Mở dịch vụ **API Gateway** và chọn HTTP API của hệ thống.
+2. Chọn **Actions**, chọn **Delete**, rồi xác nhận.
 
-#### Dọn dẹp
-1. Điều hướng đến Hosted Zones trên phía trái của bảng điều khiển Route 53. Nhấp vào tên của  s3.us-east-1.amazonaws.com zone. Nhấp vào Delete và xác nhận việc xóa bằng cách nhập từ khóa "delete".
+#### Bước 2: Xóa các hàm Lambda
 
-![hosted zone](/images/5-Workshop/5.6-Cleanup/delete-zone.png)
+1. Mở dịch vụ **Lambda**.
+2. Chọn bốn hàm `IngestLambda`, `StatusLambda`, `FastDetectWorker` và `FileDetectWorker`.
+3. Chọn **Actions**, chọn **Delete**, nhập `confirm` rồi xác nhận.
 
-2. Disassociate Route 53 Resolver Rule - myS3Rule from "VPC Onprem" and Delete it. 
+Việc xóa hàm cũng xóa luôn các event source mapping nối hàm với SQS.
 
-![hosted zone](/images/5-Workshop/5.6-Cleanup/vpc.png)
+#### Bước 3: Xóa các hàng đợi SQS
 
-4.Mở console của CloudFormation và xóa hai stack CloudFormation mà bạn đã tạo cho bài thực hành này:
-+ PLOnpremSetup
-+ PLCloudSetup
+1. Mở dịch vụ **SQS**.
+2. Chọn lần lượt ba hàng đợi `phishing-fast-queue`, `phishing-file-queue` và `phishing-dlq`.
+3. Chọn **Delete**, nhập `delete` rồi xác nhận.
 
-![delete stack](/images/5-Workshop/5.6-Cleanup/delete-stack.png)
+#### Bước 4: Xóa các bảng DynamoDB
 
-5. Xóa các S3 bucket
+1. Mở dịch vụ **DynamoDB** và chọn **Tables**.
+2. Chọn bảng `PhishingScanJobs`, chọn **Delete**, rồi xác nhận.
+3. Lặp lại với bảng `PhishingScanCache`.
 
-+ Mở bảng điều khiển S3
-+ Chọn bucket chúng ta đã tạo cho lab, nhấp chuột và xác nhận là empty. Nhấp Delete và xác nhận delete.
-+ 
-![delete s3](/images/5-Workshop/5.6-Cleanup/delete-s3.png)
+#### Bước 5: Xóa các bucket S3
+
+Bucket phải trống mới xóa được.
+
+1. Mở dịch vụ **S3** và chọn bucket upload (giá trị `RAW_BUCKET`).
+2. Chọn **Empty**, nhập `permanently delete` rồi xác nhận.
+3. Chọn **Delete**, nhập tên bucket rồi xác nhận.
+4. Lặp lại với bucket báo cáo (giá trị `REPORTS_BUCKET`).
+
+#### Bước 6: Xóa vai trò và chính sách IAM
+
+1. Mở dịch vụ **IAM** và chọn **Roles**.
+2. Chọn các role thực thi đã tạo ở mục 5.4.5, rồi chọn **Delete**.
+3. Chọn **Policies**, lọc theo **Customer managed**, rồi xóa các chính sách tự tạo cho hệ thống.
+
+#### Bước 7: Xóa tham số trong Parameter Store
+
+1. Mở **AWS Systems Manager** và chọn **Parameter Store**.
+2. Chọn các tham số có tiền tố `/phishing/`, chọn **Delete**, rồi xác nhận.
+
+Bước này xóa các khóa API đã lưu ở mục 5.4.8.
+
+#### Bước 8: Xóa log group của CloudWatch
+
+Log group không bị xóa cùng hàm Lambda và vẫn tính phí lưu trữ.
+
+1. Mở dịch vụ **CloudWatch**, chọn **Logs**, rồi chọn **Log groups**.
+2. Gõ `/aws/lambda/` vào ô tìm kiếm.
+3. Chọn các log group của bốn hàm trên, chọn **Actions**, chọn **Delete log group(s)**, rồi xác nhận.
+
+#### Kiểm tra lại
+
+Mở lại từng dịch vụ ở trên và xác nhận danh sách tài nguyên của hệ thống đã trống. Có thể kiểm tra thêm ở trang **Billing and Cost Management** vào ngày hôm sau để chắc chắn không còn khoản phí phát sinh.
