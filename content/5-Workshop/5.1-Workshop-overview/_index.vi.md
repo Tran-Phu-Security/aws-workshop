@@ -1,19 +1,58 @@
 ---
-title : "Giới thiệu"
-date : 2024-01-01 
+title : "Tổng quan"
+date : 2026-11-27
 weight : 1
 chapter : false
 pre : " <b> 5.1. </b> "
 ---
 
-#### Giới thiệu về VPC Endpoint
+#### Trust Check là gì
 
-+ Điểm cuối VPC (endpoint) là thiết bị ảo. Chúng là các thành phần VPC có thể mở rộng theo chiều ngang, dự phòng và có tính sẵn sàng cao. Chúng cho phép giao tiếp giữa tài nguyên điện toán của bạn và dịch vụ AWS mà không gây ra rủi ro về tính sẵn sàng.
-+ Tài nguyên điện toán đang chạy trong VPC có thể truy cập Amazon S3 bằng cách sử dụng điểm cuối Gateway. Interface Endpoint  PrivateLink có thể được sử dụng bởi tài nguyên chạy trong VPC hoặc tại TTDL.
+Trust Check kiểm tra một link, một email hoặc một file xem có dấu hiệu lừa đảo hay mã độc không. Thay vì chỉ trả lời "an toàn" hoặc "không an toàn", hệ thống cho bạn một điểm tin cậy từ 0 đến 100 và nói rõ vì sao điểm bị trừ.
 
-#### Tổng quan về workshop
-Trong workshop này, bạn sẽ sử dụng hai VPC.
-+ **"VPC Cloud"** dành cho các tài nguyên cloud như Gateway endpoint và EC2 instance để kiểm tra.
-+ **"VPC On-Prem"** mô phỏng môi trường truyền thống như nhà máy hoặc trung tâm dữ liệu của công ty. Một EC2 Instance chạy phần mềm StrongSwan VPN đã được triển khai trong "VPC On-prem" và được cấu hình tự động để thiết lập đường hầm VPN Site-to-Site với AWS Transit Gateway. VPN này mô phỏng kết nối từ một vị trí tại TTDL (on-prem) với AWS cloud. Để giảm thiểu chi phí, chỉ một phiên bản VPN được cung cấp để hỗ trợ workshop này. Khi lập kế hoạch kết nối VPN cho production workloads của bạn, AWS khuyên bạn nên sử dụng nhiều thiết bị VPN để có tính sẵn sàng cao.
+| Điểm | Mức |
+|---|---|
+| 80 – 100 | SAFE |
+| 50 – 79 | SUSPICIOUS |
+| dưới 50 | DANGEROUS |
 
-![overview](/images/5-Workshop/5.1-Workshop-overview/diagram1.png)
+Mỗi kết quả còn có trường `confidence` (HIGH, MEDIUM, LOW) cho biết có bao nhiêu nguồn uy tín bên ngoài đã trả lời. Điểm SAFE mà `confidence` là LOW chỉ có nghĩa là chưa thấy dấu hiệu xấu, chưa phải đã được xác nhận an toàn.
+
+#### Bạn sẽ dựng những gì
+
++ **API Gateway (HTTP API):** nhận `POST /scan` và `GET /scan/{job_id}`.
++ **Lambda (Python 3.12):** bốn hàm `IngestLambda`, `StatusLambda`, `FastDetectWorker`, `FileDetectWorker`.
++ **SQS:** hàng đợi `phishing-fast-queue` cho link và email, `phishing-file-queue` cho file, và `phishing-dlq` cho các message lỗi.
++ **DynamoDB:** bảng `PhishingScanJobs` lưu trạng thái và kết quả, bảng `PhishingScanCache` lưu bộ đệm có TTL.
++ **S3:** bucket nhận file người dùng tải lên bằng presigned URL.
++ **Systems Manager Parameter Store (tùy chọn):** cất API key dạng `SecureString`.
++ **CloudWatch:** xem log và metric.
++ **Giao diện web** viết bằng HTML, CSS, JavaScript, chạy trên máy bạn.
+
+Ngoài AWS, hệ thống còn gọi VirusTotal, Google Safe Browsing, URLhaus, MalwareBazaar và RDAP, đều bằng gói miễn phí.
+
+#### Làm xong bạn sẽ
+
++ Hiểu vai trò của từng dịch vụ và vì sao link, email được xử lý tách khỏi file.
++ Tự triển khai được một hệ thống serverless hoàn chỉnh trên AWS Console.
++ Thử với link, email và file mẫu, đọc được điểm tin cậy và lý do.
++ Xem được log, metric và hàng đợi lỗi trên CloudWatch và SQS.
++ Xóa sạch tài nguyên sau khi làm xong.
+
+#### Thông tin chung
+
++ **Region:** Singapore (`ap-southeast-1`).
++ **Thời gian:** khoảng 2 đến 3 giờ (ước tính).
++ **Chi phí:** các dịch vụ tính theo mức dùng, ở quy mô workshop nhiều khả năng nằm trong AWS Free Tier. Bạn vẫn nên xem trang Billing và làm mục 5.6 sau khi xong.
+
+#### Những gì chưa có
+
+Workshop bám đúng mã nguồn hiện tại, nên có vài giới hạn bạn nên biết trước:
+
++ ClamAV chỉ chạy khi môi trường có `clamscan`. Trên Lambda thường thì nó bị bỏ qua.
++ YARA là bộ luật chuỗi byte tự viết, chưa phải thư viện YARA thật.
++ Phân tích email dùng bộ luật Anh – Việt, không dùng mô hình học máy.
++ SPF, DKIM, DMARC được đọc từ header email bạn dán vào, hệ thống không tự tra DNS.
++ Chưa có xuất báo cáo PDF và chưa có đăng nhập người dùng.
+
+![Kiến trúc Trust Check](/images/5-Workshop/5.1-Workshop-overview/trust_check_architecture.png)
