@@ -1,126 +1,43 @@
 ---
-title: "Event 1"
-date: 2024-01-01
-weight: 1
-chapter: false
-pre: " <b> 4.1. </b> "
+title : "Event 1"
+date : 2026-11-28
+weight : 1
+chapter : false
+pre : " <b> 4.1. </b> "
 ---
 
-{{% notice warning %}}
-⚠️ **Note:** The information below is for reference purposes only. Please **do not copy it verbatim** into your report, including this warning.
-{{% /notice %}}
+# Summary Report: “Navigating the Future of Cloud & AI in Vietnam”
 
-# Summary Report: “GenAI-powered App-DB Modernization workshop”
+#### Event information
 
-### Event Objectives
+| Item | Details |
+|---|---|
+| Event name | Navigating the Future of Cloud & AI in Vietnam |
+| Speaker | Dr. Werner Vogels, Chief Technology Officer of Amazon |
+| Date | October 2, 2026 |
+| Location | [ Bitexco Tower - Ho Chi Minh City] |
+| Role | Attendee |
 
-- Share best practices in modern application design
-- Introduce Domain-Driven Design (DDD) and event-driven architecture
-- Provide guidance on selecting the right compute services
-- Present AI tools to support the development lifecycle
+I attended this session to hear Dr. Werner Vogels talk about the future of software engineering. As a student who studies in class and also builds projects on my own, I often ask myself whether AI will replace programmers, so the topic felt very close to home. The whole hall kept taking notes, and each time the speaker mentioned AI the room grew noticeably quieter.
 
-### Speakers
+#### Key takeaways
 
-- **Jignesh Shah** – Director, Open Source Databases
-- **Erica Liu** – Sr. GTM Specialist, AppMod
-- **Fabrianne Effendi** – Assc. Specialist SA, Serverless Amazon Web Services
+- **The outage on a peak shopping day.** Mr. Vogels described Amazon's early years: during the holiday shopping season the relational database was overwhelmed, the system went down for a full day and the company suffered heavy losses. What impressed me most was how the team responded. The software vendor argued that Amazon had used the product far beyond its design limits, and he openly agreed they were right. The engineers did not patch it up quickly. They stepped back and measured how the system was really used. The result showed that most queries were simple key-value lookups that did not need a heavy relational database. That finding gave rise to Dynamo and, later, DynamoDB. I use DynamoDB for the job and result-cache tables in the Trust Check project, so this story helped me understand why the service exists.
+- **Operational discipline.** According to Mr. Vogels, looking at averages is an easy way to fool yourself, because an average hides the poor experience of users at both extremes. He stressed the mindset that "everything fails at some point". Amazon runs drills on purpose, shutting down parts of its live infrastructure to see how well the system tolerates failure.
+- **The “Renaissance Developer”.** This was my favorite part. Programmers will not be pushed out if they develop around five traits: curiosity, systems thinking, ownership, broad knowledge together with deep expertise, and communication skills. He compared AI to a natural-language compiler: very fast but able to make mistakes, so its output always needs a human to check it.
 
-### Key Highlights
+#### Photos from the event
 
-#### Identifying the drawbacks of legacy application architecture
+![Photo from the event 1](/aws-workshop/images/4-EventParticipated/4.1-Event1/photo-1.jpg)
 
-- Long product release cycles → Lost revenue/missed opportunities  
-- Inefficient operations → Reduced productivity, higher costs  
-- Non-compliance with security regulations → Security breaches, loss of reputation  
+![Photo from the event 2](/aws-workshop/images/4-EventParticipated/4.1-Event1/photo-2.jpg)
 
-#### Transitioning to modern application architecture – Microservices
+#### Lessons learned and personal contribution
 
-Migrating to a modular system — each function is an **independent service** communicating via **events**, built on three core pillars:
+1. **AI writes the code, but the responsibility is mine.** I used to take AI-generated code, run a quick test and put it straight into my project once it worked. After this session I set myself a rule: never commit a line of code I cannot explain. Before accepting code from AI, I will look at edge cases, security vulnerabilities and performance bottlenecks. Anything I do not understand, I cannot claim as my own work.
+2. **Look at the whole system instead of isolated features.** School assignments usually revolve around single modules. I will redraw the data flow of Trust Check from the interface, through API Gateway, SQS and Lambda, down to DynamoDB, and ask what happens if one component stops working. Major outages almost always start from assumptions that were never verified.
+3. **Understand the real workload before choosing technology.** I tend to pick tools simply because they are popular or talked about. Amazon's story reminded me to start from how the system is actually used. From now on, before choosing a database or framework, I will list the kinds of queries and data processing the application really needs. The Trust Check cache table is looked up by a hash of the content, exactly the kind of key-value query Mr. Vogels described.
+4. **Take communication skills seriously.** I used to treat communication as a side matter. Now I see how it helps engineers find the real problem behind vague requests and explain technical trade-offs to non-technical people. I will practice writing concise documentation for my part of the work and presenting more often in group projects.
+5. **Be wary of “we have always done it this way”.** Mr. Vogels closed with Grace Hopper's well-known warning about the most dangerous phrase in the language. For me it is a reminder to review and refresh, from time to time, how I learn and write code.
 
-- **Queue Management**: Handle asynchronous tasks  
-- **Caching Strategy**: Optimize performance  
-- **Message Handling**: Flexible inter-service communication  
-
-#### Domain-Driven Design (DDD)
-
-- **Four-step method**: Identify domain events → arrange timeline → identify actors → define bounded contexts  
-- **Bookstore case study**: Demonstrates real-world DDD application  
-- **Context mapping**: 7 patterns for integrating bounded contexts  
-
-#### Event-Driven Architecture
-
-- **3 integration patterns**: Publish/Subscribe, Point-to-point, Streaming  
-- **Benefits**: Loose coupling, scalability, resilience  
-- **Sync vs async comparison**: Understanding the trade-offs  
-
-#### Compute Evolution
-
-- **Shared Responsibility Model**: EC2 → ECS → Fargate → Lambda  
-- **Serverless benefits**: No server management, auto-scaling, pay-for-value  
-- **Functions vs Containers**: Criteria for appropriate choice  
-
-#### Amazon Q Developer
-
-- **SDLC automation**: From planning to maintenance  
-- **Code transformation**: Java upgrade, .NET modernization  
-- **AWS Transform agents**: VMware, Mainframe, .NET migration  
-
-### Key Takeaways
-
-#### Design Mindset
-
-- **Business-first approach**: Always start from the business domain, not the technology  
-- **Ubiquitous language**: Importance of a shared vocabulary between business and tech teams  
-- **Bounded contexts**: Identifying and managing complexity in large systems  
-
-#### Technical Architecture
-
-- **Event storming technique**: Practical method for modeling business processes  
-- Use **event-driven communication** instead of synchronous calls  
-- **Integration patterns**: When to use sync, async, pub/sub, streaming  
-- **Compute spectrum**: Criteria for choosing between VM, containers, and serverless  
-
-#### Modernization Strategy
-
-- **Phased approach**: No rushing — follow a clear roadmap  
-- **7Rs framework**: Multiple modernization paths depending on the application  
-- **ROI measurement**: Cost reduction + business agility  
-
-### Applying to Work
-
-- **Apply DDD** to current projects: Event storming sessions with business teams  
-- **Refactor microservices**: Use bounded contexts to define service boundaries  
-- **Implement event-driven patterns**: Replace some sync calls with async messaging  
-- **Adopt serverless**: Pilot AWS Lambda for suitable use cases  
-- **Try Amazon Q Developer**: Integrate into the dev workflow to boost productivity  
-
-### Event Experience
-
-Attending the **“GenAI-powered App-DB Modernization”** workshop was extremely valuable, giving me a comprehensive view of modernizing applications and databases using advanced methods and tools. Key experiences included:
-
-#### Learning from highly skilled speakers
-- Experts from AWS and major tech organizations shared **best practices** in modern application design.  
-- Through real-world case studies, I gained a deeper understanding of applying **DDD** and **Event-Driven Architecture** to large projects.  
-
-#### Hands-on technical exposure
-- Participating in **event storming** sessions helped me visualize how to **model business processes** into domain events.  
-- Learned how to **split microservices** and define **bounded contexts** to manage large-system complexity.  
-- Understood trade-offs between **synchronous and asynchronous communication** and integration patterns like **pub/sub, point-to-point, streaming**.  
-
-#### Leveraging modern tools
-- Explored **Amazon Q Developer**, an AI tool for SDLC support from planning to maintenance.  
-- Learned to **automate code transformation** and pilot serverless with **AWS Lambda** to improve productivity.  
-
-#### Networking and discussions
-- The workshop offered opportunities to exchange ideas with experts, peers, and business teams, enhancing the **ubiquitous language** between business and tech.  
-- Real-world examples reinforced the importance of the **business-first approach** rather than focusing solely on technology.  
-
-#### Lessons learned
-- Applying DDD and event-driven patterns reduces **coupling** while improving **scalability** and **resilience**.  
-- Modernization requires a **phased approach** with **ROI measurement**; rushing the process can be risky.  
-- AI tools like Amazon Q Developer can significantly **boost productivity** when integrated into the current workflow.  
-
-#### Some event photos
-*Add your event photos here*  
-
-> Overall, the event not only provided technical knowledge but also helped me reshape my thinking about application design, system modernization, and cross-team collaboration.
+I left the hall feeling more relieved than worried. What I took home was not an empty reassurance to "stop worrying about AI", but a clearer view of what AI still cannot replace: judgment, systems thinking, accountability and professional pride. Those are the skills I need to build starting now. My first task this week is to redraw the architecture diagram of my current project and review all the code I previously let AI write for me.

@@ -1,125 +1,43 @@
 ---
-title: "Event 1"
-date: 2024-01-01
-weight: 1
-chapter: false
-pre: " <b> 4.1. </b> "
+title : "Event 1"
+date : 2026-11-28
+weight : 1
+chapter : false
+pre : " <b> 4.1. </b> "
 ---
 
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
+# Báo cáo tóm tắt: “Navigating the Future of Cloud & AI in Vietnam”
 
-# Bài thu hoạch “GenAI-powered App-DB Modernization workshop”
+#### Thông tin sự kiện
 
-### Mục Đích Của Sự Kiện
+| Mục | Nội dung |
+|---|---|
+| Tên sự kiện | Navigating the Future of Cloud & AI in Vietnam |
+| Diễn giả | Dr. Werner Vogels, Chief Technology Officer của Amazon |
+| Thời gian | Ngày 02 tháng 10 năm 2026 |
+| Địa điểm | [Bitexco Tower - TP. Hồ Chí Minh.] |
+| Vai trò | Người tham dự |
 
-- Chia sẻ best practices trong thiết kế ứng dụng hiện đại
-- Giới thiệu phương pháp DDD và event-driven architecture
-- Hướng dẫn lựa chọn compute services phù hợp
-- Giới thiệu công cụ AI hỗ trợ development lifecycle
+Em tham dự buổi chia sẻ này để nghe Dr. Werner Vogels nói về tương lai của nghề kỹ sư phần mềm. Là sinh viên vừa học trên lớp vừa làm dự án riêng, em vẫn thường tự hỏi liệu AI có thay thế lập trình viên hay không, nên chủ đề này rất gần với em. Cả hội trường ghi chép liên tục, và mỗi lần diễn giả nhắc đến AI, không gian lại yên hơn hẳn.
 
-### Danh Sách Diễn Giả
+#### Nội dung chính tiếp thu
 
-- **Jignesh Shah** - Director, Open Source Databases
-- **Erica Liu** - Sr. GTM Specialist, AppMod
-- **Fabrianne Effendi** - Assc. Specialist SA, Serverless Amazon Web Services
+- **Sự cố trong ngày mua sắm cao điểm.** Ông Vogels kể về thời kỳ đầu của Amazon: vào mùa mua sắm cuối năm, cơ sở dữ liệu quan hệ bị quá tải, hệ thống ngừng hoạt động suốt một ngày và công ty thiệt hại rất lớn. Điều em ấn tượng nhất là cách đội ngũ phản ứng. Nhà cung cấp phần mềm cho rằng Amazon đã dùng sản phẩm vượt xa giới hạn thiết kế, và ông thẳng thắn công nhận họ đúng. Các kỹ sư không vá tạm mà lùi lại để đo cách hệ thống thực sự được sử dụng. Kết quả cho thấy phần lớn truy vấn chỉ là tra cứu key-value, không cần đến một cơ sở dữ liệu quan hệ nặng nề. Từ phát hiện đó ra đời Dynamo, và về sau là DynamoDB. Em có dùng DynamoDB cho các bảng lưu job và bộ đệm kết quả trong dự án Trust Check, nên câu chuyện này giúp em hiểu rõ hơn vì sao dịch vụ ấy được tạo ra.
+- **Kỷ luật vận hành.** Theo ông Vogels, nhìn vào số trung bình là cách dễ tự đánh lừa mình, vì trung bình che đi trải nghiệm tệ của những người dùng ở hai đầu cực. Ông nhấn mạnh tư duy "mọi thứ đều có lúc hỏng". Amazon chủ động diễn tập bằng cách cố ý tắt một phần hạ tầng đang chạy thật để kiểm tra hệ thống chịu lỗi tốt đến đâu.
+- **“Renaissance Developer”.** Đây là phần em thích nhất. Lập trình viên sẽ không bị đào thải nếu phát triển quanh năm phẩm chất: sự tò mò, tư duy hệ thống, tinh thần làm chủ, kiến thức rộng đi cùng chuyên môn sâu, và kỹ năng giao tiếp. Ông ví AI như một trình biên dịch ngôn ngữ tự nhiên: rất nhanh nhưng có thể sai, vì vậy kết quả của nó luôn cần con người kiểm tra lại.
 
-### Nội Dung Nổi Bật
+#### Hình ảnh tại sự kiện
 
-#### Đưa ra các ảnh hưởng tiêu cực của kiến trúc ứng dụng cũ
+![Hình ảnh tham dự sự kiện 1](/aws-workshop/images/4-EventParticipated/4.1-Event1/photo-1.jpg)
 
-- Thời gian release sản phẩm lâu → Mất doanh thu/bỏ lỡ cơ hội
-- Hoạt động kém hiệu quả → Mất năng suất, tốn kém chi phí
-- Không tuân thủ các quy định về bảo mật → Mất an ninh, uy tín
+![Hình ảnh tham dự sự kiện 2](/aws-workshop/images/4-EventParticipated/4.1-Event1/photo-2.jpg)
 
-#### Chuyển đổi sang kiến trúc ứng dụng mới - Microservice Architecture
+#### Bài học rút ra và đóng góp cá nhân
 
-Chuyển đổi thành hệ thống modular – từng chức năng là một **dịch vụ độc lập** giao tiếp với nhau qua **sự kiện** với 3 trụ cột cốt lõi:
+1. **AI viết mã, nhưng trách nhiệm thuộc về em.** Trước đây em hay lấy mã do AI sinh ra, chạy thử nhanh, thấy chạy được là đưa thẳng vào dự án. Sau buổi này, em tự đặt quy tắc: không commit dòng mã nào mà em không giải thích được. Trước khi nhận mã từ AI, em sẽ xem xét các trường hợp biên, lỗ hổng bảo mật và điểm nghẽn hiệu năng. Phần nào chưa hiểu thì em không thể nhận là sản phẩm của mình.
+2. **Nhìn toàn bộ hệ thống thay vì từng chức năng riêng lẻ.** Bài tập ở trường thường chỉ xoay quanh từng module. Em sẽ vẽ lại luồng dữ liệu của Trust Check từ giao diện, qua API Gateway, SQS và Lambda, đến DynamoDB, rồi tự hỏi: nếu một thành phần ngừng hoạt động thì điều gì xảy ra. Các sự cố lớn hầu như đều bắt nguồn từ những giả định chưa được kiểm chứng.
+3. **Hiểu khối lượng công việc thực tế trước khi chọn công nghệ.** Em hay chọn công cụ chỉ vì nó phổ biến hoặc đang được nhắc nhiều. Câu chuyện của Amazon nhắc em phải bắt đầu từ cách hệ thống thực sự được dùng. Từ nay, trước khi chọn cơ sở dữ liệu hay framework, em sẽ liệt kê các kiểu truy vấn và xử lý dữ liệu mà ứng dụng thực sự cần. Bảng bộ đệm của Trust Check tra theo mã băm của nội dung, đúng kiểu truy vấn key-value mà ông Vogels nhắc tới.
+4. **Coi trọng kỹ năng giao tiếp.** Trước đây em xem giao tiếp là việc phụ. Giờ em thấy nó giúp kỹ sư tìm ra vấn đề cốt lõi đằng sau những yêu cầu mơ hồ và giải thích các đánh đổi kỹ thuật cho người không chuyên. Em sẽ tập viết tài liệu ngắn gọn cho phần việc của mình và thuyết trình nhiều hơn trong các dự án nhóm.
+5. **Cảnh giác với câu “xưa nay vẫn làm như vậy”.** Ông Vogels kết thúc bằng lời cảnh báo nổi tiếng của Grace Hopper về câu nói nguy hiểm nhất trong ngôn ngữ. Với em, đó là lời nhắc định kỳ xem lại và làm mới cách mình học và viết mã.
 
-- **Queue Management**: Xử lý tác vụ bất đồng bộ
-- **Caching Strategy:** Tối ưu performance
-- **Message Handling:** Giao tiếp linh hoạt giữa services
-
-#### Domain-Driven Design (DDD)
-
-- **Phương pháp 4 bước**: Xác định domain events → sắp xếp timeline → identify actors → xác định bounded contexts
-- **Case study bookstore**: Minh họa cách áp dụng DDD thực tế
-- **Context mapping**: 7 patterns tích hợp bounded contexts
-
-#### Event-Driven Architecture
-
-- **3 patterns tích hợp**: Publish/Subscribe, Point-to-point, Streaming
-- **Lợi ích**: Loose coupling, scalability, resilience
-- **So sánh sync vs async**: Hiểu rõ trade-offs (sự đánh đổi)
-
-#### Compute Evolution
-
-- **Shared Responsibility Model**: Từ EC2 → ECS → Fargate → Lambda
-- **Serverless benefits**: No server management, auto-scaling, pay-for-value
-- **Functions vs Containers**: Criteria lựa chọn phù hợp
-
-#### Amazon Q Developer
-
-- **SDLC automation**: Từ planning đến maintenance
-- **Code transformation**: Java upgrade, .NET modernization
-- **AWS Transform agents**: VMware, Mainframe, .NET migration
-
-### Những Gì Học Được
-
-#### Tư Duy Thiết Kế
-
-- **Business-first approach**: Luôn bắt đầu từ business domain, không phải technology
-- **Ubiquitous language**: Importance của common vocabulary giữa business và tech teams
-- **Bounded contexts**: Cách identify và manage complexity trong large systems
-
-#### Kiến Trúc Kỹ Thuật
-
-- **Event storming technique**: Phương pháp thực tế để mô hình hóa quy trình kinh doanh
-- Sử dụng **Event-driven communication** thay vì synchronous calls
-- **Integration patterns**: Hiểu khi nào dùng sync, async, pub/sub, streaming
-- **Compute spectrum**: Criteria chọn từ VM → containers → serverless
-
-#### Chiến Lược Hiện Đại Hóa
-
-- **Phased approach**: Không rush, phải có roadmap rõ ràng
-- **7Rs framework**: Nhiều con đường khác nhau tùy thuộc vào đặc điểm của mỗi ứng dụng
-- **ROI measurement**: Cost reduction + business agility
-
-### Ứng Dụng Vào Công Việc
-
-- **Áp dụng DDD** cho project hiện tại: Event storming sessions với business team
-- **Refactor microservices**: Sử dụng bounded contexts để identify service boundaries
-- **Implement event-driven patterns**: Thay thế một số sync calls bằng async messaging
-- **Serverless adoption**: Pilot AWS Lambda cho một số use cases phù hợp
-- **Try Amazon Q Developer**: Integrate vào development workflow để boost productivity
-
-### Trải nghiệm trong event
-
-Tham gia workshop **“GenAI-powered App-DB Modernization”** là một trải nghiệm rất bổ ích, giúp tôi có cái nhìn toàn diện về cách hiện đại hóa ứng dụng và cơ sở dữ liệu bằng các phương pháp và công cụ hiện đại. Một số trải nghiệm nổi bật:
-
-#### Học hỏi từ các diễn giả có chuyên môn cao
-- Các diễn giả đến từ AWS và các tổ chức công nghệ lớn đã chia sẻ **best practices** trong thiết kế ứng dụng hiện đại.
-- Qua các case study thực tế, tôi hiểu rõ hơn cách áp dụng **Domain-Driven Design (DDD)** và **Event-Driven Architecture** vào các project lớn.
-
-#### Trải nghiệm kỹ thuật thực tế
-- Tham gia các phiên trình bày về **event storming** giúp tôi hình dung cách **mô hình hóa quy trình kinh doanh** thành các domain events.
-- Học cách **phân tách microservices** và xác định **bounded contexts** để quản lý sự phức tạp của hệ thống lớn.
-- Hiểu rõ trade-offs giữa **synchronous và asynchronous communication** cũng như các pattern tích hợp như **pub/sub, point-to-point, streaming**.
-
-#### Ứng dụng công cụ hiện đại
-- Trực tiếp tìm hiểu về **Amazon Q Developer**, công cụ AI hỗ trợ SDLC từ lập kế hoạch đến maintenance.
-- Học cách **tự động hóa code transformation** và pilot serverless với **AWS Lambda**, từ đó nâng cao năng suất phát triển.
-
-#### Kết nối và trao đổi
-- Workshop tạo cơ hội trao đổi trực tiếp với các chuyên gia, đồng nghiệp và team business, giúp **nâng cao ngôn ngữ chung (ubiquitous language)** giữa business và tech.
-- Qua các ví dụ thực tế, tôi nhận ra tầm quan trọng của **business-first approach**, luôn bắt đầu từ nhu cầu kinh doanh thay vì chỉ tập trung vào công nghệ.
-
-#### Bài học rút ra
-- Việc áp dụng DDD và event-driven patterns giúp giảm **coupling**, tăng **scalability** và **resilience** cho hệ thống.
-- Chiến lược hiện đại hóa cần **phased approach** và đo lường **ROI**, không nên vội vàng chuyển đổi toàn bộ hệ thống.
-- Các công cụ AI như Amazon Q Developer có thể **boost productivity** nếu được tích hợp vào workflow phát triển hiện tại.
-
-#### Một số hình ảnh khi tham gia sự kiện
-* Thêm các hình ảnh của các bạn tại đây
-> Tổng thể, sự kiện không chỉ cung cấp kiến thức kỹ thuật mà còn giúp tôi thay đổi cách tư duy về thiết kế ứng dụng, hiện đại hóa hệ thống và phối hợp hiệu quả hơn giữa các team.
+Rời hội trường, em thấy nhẹ nhõm nhiều hơn là lo lắng. Điều em mang về không phải một lời trấn an suông rằng "đừng lo về AI", mà là cái nhìn rõ hơn về những gì AI chưa thay thế được: khả năng phán đoán, tư duy hệ thống, trách nhiệm và lòng tự trọng nghề nghiệp. Đó cũng là những kỹ năng em cần rèn ngay từ bây giờ. Việc đầu tiên trong tuần này của em là vẽ lại sơ đồ kiến trúc của dự án hiện tại và rà soát toàn bộ phần mã trước đây em từng để AI viết hộ.
