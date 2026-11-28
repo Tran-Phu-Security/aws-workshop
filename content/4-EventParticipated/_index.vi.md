@@ -1,46 +1,34 @@
 ---
-title: "Các events đã tham gia"
-date: 2024-01-01
-weight: 4
-chapter: false
-pre: " <b> 4. </b> "
+title : "Các events đã tham gia"
+date : 2026-11-28
+weight : 4
+chapter : false
+pre : " <b> 4. </b> "
 ---
 
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
-
-> Trong phần này, các bạn cần liệt kê và mô tả chi tiết các sự kiện (event) mà mình đã tham gia trong suốt quá trình thực tập hoặc làm việc. 
-> 
-> Mỗi sự kiện nên được trình bày theo định dạng Event 1, Event 2, Event 3…, kèm theo các thông tin:
-> * Tên sự kiện
-> * Thời gian tổ chức
-> * Địa điểm (nếu có)
-> * Vai trò của bạn trong sự kiện (người tham dự, hỗ trợ tổ chức, diễn giả, v.v.)
-> * Mô tả ngắn gọn nội dung và hoạt động chính trong sự kiện
-> * Kết quả hoặc giá trị đạt được (bài học, kỹ năng mới, đóng góp cho nhóm/dự án)
-> * Việc liệt kê này giúp thể hiện rõ sự tham gia thực tế của bạn, cũng như các kỹ năng mềm và kinh nghiệm bạn đã tích lũy qua từng sự kiện.
-
-
-Trong quá trình thực tập, em đã tham gia 2 events, với mỗi event là một trải nghiệm đáng nhớ với những kiến thức mới, hay và bổ ích, cùng với đó là nhứng món quà và những khoảnh khắc rất tuyệt vời.
+Trong thời gian thực tập, em đã tham dự ba sự kiện về Cloud và AI do cộng đồng AWS Study Group cùng các đối tác tổ chức. Mỗi sự kiện đều mang lại kiến thức mới và những định hướng hữu ích cho việc học và nghề nghiệp.
 
 ### [Event 1](4.1-Event1/)
-&emsp;**Tên sự kiện:** GenAI-powered App-DB Modernization workshop
 
-&emsp;**Thời gian:** 09:00 ngày 13/08/2025
+- **Tên sự kiện:** Navigating the Future of Cloud & AI in Vietnam
+- **Thời gian:** Ngày 02 tháng 10 năm 2026
+- **Vai trò:** Người tham dự
+- **Nội dung chính:** Dr. Werner Vogels chia sẻ về tương lai của nghề kỹ sư phần mềm trong thời đại AI.
 
-&emsp;**Địa điểm:** Tầng 26, tòa nhà Bitexco, số 02 đường Hải Triều, phường Sài Gòn, thành phố Hồ Chí Minh
-
-&emsp;**Vai trò trong sự kiện:** Người tham dự 
-
-
+---
 
 ### [Event 2](4.2-Event2/)
-&emsp;**Tên sự kiện:** GenAI-powered App-DB Modernization workshop
 
-&emsp;**Thời gian:** 09:00 ngày 13/08/2025
+- **Tên sự kiện:** Buildrathon Kickoff: Code the Future with CMC Global
+- **Thời gian:** 09:00 đến 12:00, thứ Bảy, ngày 26/09/2026
+- **Vai trò:** Người tham dự
+- **Nội dung chính:** Khởi động cuộc thi FCAJ Buildrathon 2026, talkshow về xây dựng AI Agent và thực hành thử thách AI Agent.
 
-&emsp;**Địa điểm:** Tầng 26, tòa nhà Bitexco, số 02 đường Hải Triều, phường Sài Gòn, thành phố Hồ Chí Minh
+---
 
-&emsp;**Vai trò trong sự kiện:** Người tham dự 
+### [Event 3](4.3-Event3/)
 
+- **Tên sự kiện:** Cloud Mastery
+- **Thời gian:** Sáng thứ Bảy, ngày 14/11/2026
+- **Vai trò:** Người tham gia
+- **Nội dung chính:** Đưa hệ thống Agentic AI từ prototype lên production trên AWS, từ bảo mật định danh đến kiến trúc triển khai.
