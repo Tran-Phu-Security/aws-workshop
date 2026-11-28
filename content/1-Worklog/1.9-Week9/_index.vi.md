@@ -23,12 +23,12 @@ pre = "<b> 1.9. </b>"
 | STT | Nội dung công việc | Ngày bắt đầu | Ngày hoàn thành |
 |---|---|---|---|
 | 1 | Tìm hiểu tổng quan về Monitoring và Logging, vai trò của hai hoạt động trong việc đảm bảo hệ thống AWS vận hành ổn định. | 09/11/2026 | 09/11/2026 |
-| 2 | Tìm hiểu Amazon CloudWatch và các loại Metrics được sử dụng để theo dõi tài nguyên AWS. | 09/11/2026 | 09/11/2026 |
-| 3 | Tìm hiểu CloudWatch Logs, Log Groups, Log Streams và cách tổ chức, theo dõi dữ liệu nhật ký. | 09/11/2026 | 09/11/2026 |
-| 4 | Tìm hiểu CloudWatch Dashboards và cách tổng hợp các chỉ số giám sát trên một giao diện. | 09/11/2026 | 09/11/2026 |
-| 5 | Tìm hiểu CloudWatch Alarms, điều kiện cảnh báo và cách kết hợp với Amazon SNS để gửi thông báo. | 09/11/2026 | 09/11/2026 |
-| 6 | Tìm hiểu AWS CloudTrail, Event History và cách ghi nhận các hoạt động API diễn ra trên tài khoản AWS. | 09/11/2026 | 09/11/2026 |
-| 7 | So sánh mục đích sử dụng của CloudWatch và CloudTrail; tìm hiểu cách kết hợp hai dịch vụ trong hoạt động giám sát và kiểm tra hệ thống. | 09/11/2026 | 09/11/2026 |
+| 2 | Tìm hiểu Amazon CloudWatch và các loại Metrics được sử dụng để theo dõi tài nguyên AWS. | 10/11/2026 | 10/11/2026 |
+| 3 | Tìm hiểu CloudWatch Logs, Log Groups, Log Streams và cách tổ chức, theo dõi dữ liệu nhật ký. | 11/11/2026 | 11/11/2026 |
+| 4 | Tìm hiểu CloudWatch Dashboards và cách tổng hợp các chỉ số giám sát trên một giao diện. | 12/11/2026 | 12/11/2026 |
+| 5 | Tìm hiểu CloudWatch Alarms, điều kiện cảnh báo và cách kết hợp với Amazon SNS để gửi thông báo. | 13/11/2026 | 13/11/2026 |
+| 6 | Tìm hiểu AWS CloudTrail, Event History và cách ghi nhận các hoạt động API diễn ra trên tài khoản AWS. | 14/11/2026 | 14/11/2026 |
+| 7 | So sánh mục đích sử dụng của CloudWatch và CloudTrail; tìm hiểu cách kết hợp hai dịch vụ trong hoạt động giám sát và kiểm tra hệ thống. | 15/11/2026 | 15/11/2026 |
 
 ## 3. Kết quả đạt được
 

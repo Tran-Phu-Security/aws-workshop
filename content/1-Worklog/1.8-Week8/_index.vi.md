@@ -22,12 +22,12 @@ pre = "<b> 1.8. </b>"
 | STT | Nội dung công việc | Ngày bắt đầu | Ngày hoàn thành |
 |---|---|---|---|
 | 1 | Tìm hiểu khái niệm CI/CD, sự khác nhau giữa Continuous Integration, Continuous Delivery và Continuous Deployment. | 02/11/2026 | 02/11/2026 |
-| 2 | Tìm hiểu AWS CodeCommit và vai trò của dịch vụ trong việc quản lý, lưu trữ mã nguồn dự án. | 02/11/2026 | 02/11/2026 |
-| 3 | Tìm hiểu AWS CodeBuild, các thành phần của quá trình build và cách sử dụng tệp buildspec.yml. | 02/11/2026 | 02/11/2026 |
-| 4 | Tìm hiểu AWS CodeDeploy và cơ chế triển khai ứng dụng tự động lên máy chủ EC2. | 02/11/2026 | 02/11/2026 |
-| 5 | Tìm hiểu AWS CodePipeline và cách kết nối các giai đoạn Source, Build và Deploy thành một pipeline. | 02/11/2026 | 02/11/2026 |
-| 6 | Thực hành xây dựng pipeline triển khai ứng dụng lên EC2 theo tài liệu hướng dẫn; theo dõi quá trình thực thi và kiểm tra kết quả. | 02/11/2026 | 02/11/2026 |
-| 7 | Tìm hiểu cách kiểm tra trạng thái pipeline, đọc lỗi và xác định nguyên nhân khi một giai đoạn triển khai không thành công. | 02/11/2026 | 02/11/2026 |
+| 2 | Tìm hiểu AWS CodeCommit và vai trò của dịch vụ trong việc quản lý, lưu trữ mã nguồn dự án. | 03/11/2026 | 03/11/2026 |
+| 3 | Tìm hiểu AWS CodeBuild, các thành phần của quá trình build và cách sử dụng tệp buildspec.yml. | 04/11/2026 | 04/11/2026 |
+| 4 | Tìm hiểu AWS CodeDeploy và cơ chế triển khai ứng dụng tự động lên máy chủ EC2. | 05/11/2026 | 05/11/2026 |
+| 5 | Tìm hiểu AWS CodePipeline và cách kết nối các giai đoạn Source, Build và Deploy thành một pipeline. | 06/11/2026 | 06/11/2026 |
+| 6 | Thực hành xây dựng pipeline triển khai ứng dụng lên EC2 theo tài liệu hướng dẫn; theo dõi quá trình thực thi và kiểm tra kết quả. | 07/11/2026 | 07/11/2026 |
+| 7 | Tìm hiểu cách kiểm tra trạng thái pipeline, đọc lỗi và xác định nguyên nhân khi một giai đoạn triển khai không thành công. | 08/11/2026 | 08/11/2026 |
 
 ## 3. Kết quả đạt được
 

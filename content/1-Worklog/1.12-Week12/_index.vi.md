@@ -1,6 +1,6 @@
 ---
 title: "Tuần 12: Tìm hiểu về bảo mật và quản trị trên AWS"
-date: 2026-11-30
+date: 2026-11-28
 weight: 12
 chapter: false
 pre: " <b> 1.12. </b> "

@@ -23,12 +23,12 @@ pre = "<b> 1.9. </b>"
 | No. | Task Description | Start Date | Completion Date |
 |---|---|---|---|
 | 1 | Study the fundamentals of Monitoring and Logging and their roles in maintaining stable AWS operations. | 09/11/2026 | 09/11/2026 |
-| 2 | Explore Amazon CloudWatch and the different types of metrics used to monitor AWS resources. | 09/11/2026 | 09/11/2026 |
-| 3 | Study CloudWatch Logs, Log Groups, and Log Streams, including how log data is organized and monitored. | 09/11/2026 | 09/11/2026 |
-| 4 | Explore CloudWatch Dashboards and how monitoring metrics can be consolidated into a single interface. | 09/11/2026 | 09/11/2026 |
-| 5 | Study CloudWatch Alarms, alarm conditions, and how they can be integrated with Amazon SNS for notifications. | 09/11/2026 | 09/11/2026 |
-| 6 | Explore AWS CloudTrail, Event History, and how API activities are recorded within an AWS account. | 09/11/2026 | 09/11/2026 |
-| 7 | Compare the purposes of CloudWatch and CloudTrail and explore how both services support system monitoring and auditing. | 09/11/2026 | 09/11/2026 |
+| 2 | Explore Amazon CloudWatch and the different types of metrics used to monitor AWS resources. | 10/11/2026 | 10/11/2026 |
+| 3 | Study CloudWatch Logs, Log Groups, and Log Streams, including how log data is organized and monitored. | 11/11/2026 | 11/11/2026 |
+| 4 | Explore CloudWatch Dashboards and how monitoring metrics can be consolidated into a single interface. | 12/11/2026 | 12/11/2026 |
+| 5 | Study CloudWatch Alarms, alarm conditions, and how they can be integrated with Amazon SNS for notifications. | 13/11/2026 | 13/11/2026 |
+| 6 | Explore AWS CloudTrail, Event History, and how API activities are recorded within an AWS account. | 14/11/2026 | 14/11/2026 |
+| 7 | Compare the purposes of CloudWatch and CloudTrail and explore how both services support system monitoring and auditing. | 15/11/2026 | 15/11/2026 |
 
 ## 3. Achievements
 

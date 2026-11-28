@@ -24,12 +24,12 @@ pre = "<b> 1.10. </b>"
 | STT | Nội dung công việc | Ngày bắt đầu | Ngày hoàn thành |
 |---|---|---|---|
 | 1 | Tìm hiểu tổng quan về Serverless Computing, nguyên lý hoạt động và lợi ích của mô hình này trong phát triển ứng dụng. | 16/11/2026 | 16/11/2026 |
-| 2 | Tìm hiểu AWS Lambda, cách tạo Function, lựa chọn Runtime, cấu hình Handler và các thiết lập cơ bản. | 16/11/2026 | 16/11/2026 |
-| 3 | Tìm hiểu cơ chế thực thi Lambda, Execution Role, thời gian Timeout, bộ nhớ và các giới hạn tài nguyên. | 16/11/2026 | 16/11/2026 |
-| 4 | Tìm hiểu Amazon API Gateway, các thành phần cơ bản của API và cách cấu hình Endpoint để tiếp nhận yêu cầu. | 16/11/2026 | 16/11/2026 |
-| 5 | Tìm hiểu cách tích hợp API Gateway với AWS Lambda để xử lý yêu cầu HTTP và trả về phản hồi cho người dùng. | 16/11/2026 | 16/11/2026 |
-| 6 | Tìm hiểu các nguồn kích hoạt Lambda (Triggers), bao gồm API Gateway và sự kiện phát sinh từ Amazon S3. | 16/11/2026 | 16/11/2026 |
-| 7 | Khảo sát mô hình ứng dụng Serverless sử dụng Lambda, S3 và DynamoDB; tìm hiểu cách giám sát hoạt động thông qua CloudWatch. | 16/11/2026 | 16/11/2026 |
+| 2 | Tìm hiểu AWS Lambda, cách tạo Function, lựa chọn Runtime, cấu hình Handler và các thiết lập cơ bản. | 17/11/2026 | 17/11/2026 |
+| 3 | Tìm hiểu cơ chế thực thi Lambda, Execution Role, thời gian Timeout, bộ nhớ và các giới hạn tài nguyên. | 18/11/2026 | 18/11/2026 |
+| 4 | Tìm hiểu Amazon API Gateway, các thành phần cơ bản của API và cách cấu hình Endpoint để tiếp nhận yêu cầu. | 19/11/2026 | 19/11/2026 |
+| 5 | Tìm hiểu cách tích hợp API Gateway với AWS Lambda để xử lý yêu cầu HTTP và trả về phản hồi cho người dùng. | 20/11/2026 | 20/11/2026 |
+| 6 | Tìm hiểu các nguồn kích hoạt Lambda (Triggers), bao gồm API Gateway và sự kiện phát sinh từ Amazon S3. | 21/11/2026 | 21/11/2026 |
+| 7 | Khảo sát mô hình ứng dụng Serverless sử dụng Lambda, S3 và DynamoDB; tìm hiểu cách giám sát hoạt động thông qua CloudWatch. | 22/11/2026 | 22/11/2026 |
 
 ## 3. Kết quả đạt được
 

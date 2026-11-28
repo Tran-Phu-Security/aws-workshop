@@ -23,12 +23,12 @@ pre = "<b> 1.11. </b>"
 | No. | Task Description | Start Date | Completion Date |
 |---|---|---|---|
 | 1 | Study the concept of Containerization and the fundamental differences between Containers and Virtual Machines (VMs). | 23/11/2026 | 23/11/2026 |
-| 2 | Explore Docker and its main components, including Docker Engine, Docker Images, Containers, and Dockerfiles. | 23/11/2026 | 23/11/2026 |
-| 3 | Study how to build Docker Images from Dockerfiles, run Containers, and perform basic Container management. | 23/11/2026 | 23/11/2026 |
-| 4 | Explore Amazon ECR, Repositories, and how Docker Images are stored and managed on AWS. | 23/11/2026 | 23/11/2026 |
-| 5 | Study Amazon ECS and its main components, including Clusters, Task Definitions, Tasks, and Services. | 23/11/2026 | 23/11/2026 |
-| 6 | Learn how Docker and Amazon ECR work together to prepare Container Images for deployment on ECS. | 23/11/2026 | 23/11/2026 |
-| 7 | Examine the deployment and management of containerized applications on Amazon ECS, including how to monitor Task and Service status. | 23/11/2026 | 23/11/2026 |
+| 2 | Explore Docker and its main components, including Docker Engine, Docker Images, Containers, and Dockerfiles. | 24/11/2026 | 24/11/2026 |
+| 3 | Study how to build Docker Images from Dockerfiles, run Containers, and perform basic Container management. | 25/11/2026 | 25/11/2026 |
+| 4 | Explore Amazon ECR, Repositories, and how Docker Images are stored and managed on AWS. | 26/11/2026 | 26/11/2026 |
+| 5 | Study Amazon ECS and its main components, including Clusters, Task Definitions, Tasks, and Services. | 27/11/2026 | 27/11/2026 |
+| 6 | Learn how Docker and Amazon ECR work together to prepare Container Images for deployment on ECS. | 28/11/2026 | 28/11/2026 |
+| 7 | Examine the deployment and management of containerized applications on Amazon ECS, including how to monitor Task and Service status. | 29/11/2026 | 29/11/2026 |
 
 ## 3. Achievements
 

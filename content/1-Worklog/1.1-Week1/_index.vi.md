@@ -18,11 +18,11 @@ pre: " <b> 1.1. </b> "
 
 | Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
 | --- | --- | --- | --- | --- |
-| 2 | - Tham gia buổi định hướng chương trình thực tập.<br>- Làm quen với mentor và các thành viên trong chương trình First Cloud AI Journey.<br>- Tìm hiểu nội quy, quy định và lộ trình học tập trong thời gian thực tập. | 14/09/2026 | 14/09/2026 | |
-| 2 | - Tìm hiểu tổng quan về AWS và Cloud Computing.<br>- Nghiên cứu các nhóm dịch vụ chính của AWS, bao gồm Compute, Storage, Networking và Database.<br>- Ghi chú chức năng và một số dịch vụ tiêu biểu thuộc từng nhóm. | 14/09/2026 | 14/09/2026 | [The First Cloud Journey](https://cloudjourney.awsfcaj.com/) |
-| 2 | - Tạo tài khoản AWS Free Tier.<br>- Làm quen với giao diện AWS Management Console.<br>- Cài đặt AWS CLI trên máy tính cá nhân.<br>- Tìm hiểu và cấu hình Access Key, Secret Access Key và Default Region.<br>- Thực hiện các lệnh AWS CLI cơ bản để kiểm tra cấu hình và kết nối. | 14/09/2026 | 14/09/2026 | [Creating Your First AWS Account](https://000001.awsfcaj.com/)<br>[AWS CLI Workshop](https://000011.awsfcaj.com/) |
-| 2 | - Tìm hiểu các kiến thức cơ bản về Amazon EC2.<br>- Nghiên cứu các khái niệm Instance Type, AMI, EBS và Elastic IP.<br>- Tìm hiểu cách tạo Key Pair và phương thức kết nối đến EC2 thông qua SSH. | 14/09/2026 | 14/09/2026 | [Amazon EC2 Workshop](https://000004.awsfcaj.com/) |
-| 2 | - Thực hành khởi tạo Amazon EC2 Instance.<br>- Tìm hiểu và cấu hình Security Group.<br>- Thực hành kết nối đến EC2 Instance thông qua SSH.<br>- Thực hành gắn thêm EBS Volume và kiểm tra hoạt động của Instance. | 14/09/2026 | 14/09/2026 | [Amazon EC2 Workshop](https://000004.awsfcaj.com/) |
+| Thứ Hai | - Tham gia buổi định hướng chương trình thực tập.<br>- Làm quen với mentor và các thành viên trong chương trình First Cloud AI Journey.<br>- Tìm hiểu nội quy, quy định và lộ trình học tập trong thời gian thực tập. | 14/09/2026 | 14/09/2026 | |
+| Thứ Ba | - Tìm hiểu tổng quan về AWS và Cloud Computing.<br>- Nghiên cứu các nhóm dịch vụ chính của AWS, bao gồm Compute, Storage, Networking và Database.<br>- Ghi chú chức năng và một số dịch vụ tiêu biểu thuộc từng nhóm. | 15/09/2026 | 15/09/2026 | [The First Cloud Journey](https://cloudjourney.awsfcaj.com/) |
+| Thứ Tư | - Tạo tài khoản AWS Free Tier.<br>- Làm quen với giao diện AWS Management Console.<br>- Cài đặt AWS CLI trên máy tính cá nhân.<br>- Tìm hiểu và cấu hình Access Key, Secret Access Key và Default Region.<br>- Thực hiện các lệnh AWS CLI cơ bản để kiểm tra cấu hình và kết nối. | 16/09/2026 | 16/09/2026 | [Creating Your First AWS Account](https://000001.awsfcaj.com/)<br>[AWS CLI Workshop](https://000011.awsfcaj.com/) |
+| Thứ Năm | - Tìm hiểu các kiến thức cơ bản về Amazon EC2.<br>- Nghiên cứu các khái niệm Instance Type, AMI, EBS và Elastic IP.<br>- Tìm hiểu cách tạo Key Pair và phương thức kết nối đến EC2 thông qua SSH. | 17/09/2026 | 17/09/2026 | [Amazon EC2 Workshop](https://000004.awsfcaj.com/) |
+| Thứ Sáu | - Thực hành khởi tạo Amazon EC2 Instance.<br>- Tìm hiểu và cấu hình Security Group.<br>- Thực hành kết nối đến EC2 Instance thông qua SSH.<br>- Thực hành gắn thêm EBS Volume và kiểm tra hoạt động của Instance. | 18/09/2026 | 18/09/2026 | [Amazon EC2 Workshop](https://000004.awsfcaj.com/) |
 
 ### Kết quả đạt được tuần 1:
 

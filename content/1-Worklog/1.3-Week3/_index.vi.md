@@ -19,11 +19,11 @@ pre: " <b> 1.3. </b> "
 
 | Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
 | --- | --- | --- | --- | --- |
-| 2 | - Tìm hiểu tổng quan về Amazon Virtual Private Cloud (VPC).<br>- Nghiên cứu vai trò của VPC trong việc xây dựng môi trường mạng riêng trên AWS.<br>- Tìm hiểu khái niệm CIDR và cách xác định dải địa chỉ IP cho VPC. | 28/09/2026 | 28/09/2026 | [Amazon VPC Workshop](https://000003.awsfcaj.com/) |
-| 2 | - Tìm hiểu khái niệm Subnet và cách phân chia mạng VPC thành các mạng con.<br>- Phân biệt Public Subnet và Private Subnet.<br>- Tìm hiểu cách lựa chọn Availability Zone khi tạo Subnet. | 28/09/2026 | 28/09/2026 | [Amazon VPC Workshop](https://000003.awsfcaj.com/) |
-| 2 | - Tìm hiểu chức năng của Route Table trong việc định tuyến lưu lượng mạng.<br>- Nghiên cứu Internet Gateway (IGW) và cách kết nối VPC với Internet.<br>- Tìm hiểu mối quan hệ giữa Subnet, Route Table và Internet Gateway. | 28/09/2026 | 28/09/2026 | [Amazon VPC Workshop](https://000003.awsfcaj.com/) |
-| 2 | - Tìm hiểu cơ chế kiểm soát truy cập mạng của Security Group và Network ACL (NACL).<br>- Phân biệt Security Group và NACL về phạm vi áp dụng, trạng thái kết nối và quy tắc xử lý lưu lượng.<br>- Tìm hiểu cách cấu hình Inbound Rules và Outbound Rules. | 28/09/2026 | 28/09/2026 | [Amazon VPC Workshop](https://000003.awsfcaj.com/) |
-| 2 | - Thực hành tạo một VPC trên AWS.<br>- Tạo Public Subnet và Private Subnet trong các Availability Zone phù hợp.<br>- Cấu hình Route Table và Internet Gateway.<br>- Thiết lập Security Group và Network ACL.<br>- Kiểm tra cấu hình mạng và khả năng kết nối giữa các thành phần trong VPC. | 28/09/2026 | 28/09/2026 | [Amazon VPC Workshop](https://000003.awsfcaj.com/) |
+| Thứ Hai | - Tìm hiểu tổng quan về Amazon Virtual Private Cloud (VPC).<br>- Nghiên cứu vai trò của VPC trong việc xây dựng môi trường mạng riêng trên AWS.<br>- Tìm hiểu khái niệm CIDR và cách xác định dải địa chỉ IP cho VPC. | 28/09/2026 | 28/09/2026 | [Amazon VPC Workshop](https://000003.awsfcaj.com/) |
+| Thứ Ba | - Tìm hiểu khái niệm Subnet và cách phân chia mạng VPC thành các mạng con.<br>- Phân biệt Public Subnet và Private Subnet.<br>- Tìm hiểu cách lựa chọn Availability Zone khi tạo Subnet. | 29/09/2026 | 29/09/2026 | [Amazon VPC Workshop](https://000003.awsfcaj.com/) |
+| Thứ Tư | - Tìm hiểu chức năng của Route Table trong việc định tuyến lưu lượng mạng.<br>- Nghiên cứu Internet Gateway (IGW) và cách kết nối VPC với Internet.<br>- Tìm hiểu mối quan hệ giữa Subnet, Route Table và Internet Gateway. | 30/09/2026 | 30/09/2026 | [Amazon VPC Workshop](https://000003.awsfcaj.com/) |
+| Thứ Năm | - Tìm hiểu cơ chế kiểm soát truy cập mạng của Security Group và Network ACL (NACL).<br>- Phân biệt Security Group và NACL về phạm vi áp dụng, trạng thái kết nối và quy tắc xử lý lưu lượng.<br>- Tìm hiểu cách cấu hình Inbound Rules và Outbound Rules. | 01/10/2026 | 01/10/2026 | [Amazon VPC Workshop](https://000003.awsfcaj.com/) |
+| Thứ Sáu | - Thực hành tạo một VPC trên AWS.<br>- Tạo Public Subnet và Private Subnet trong các Availability Zone phù hợp.<br>- Cấu hình Route Table và Internet Gateway.<br>- Thiết lập Security Group và Network ACL.<br>- Kiểm tra cấu hình mạng và khả năng kết nối giữa các thành phần trong VPC. | 02/10/2026 | 02/10/2026 | [Amazon VPC Workshop](https://000003.awsfcaj.com/) |
 
 ### Kết quả đạt được tuần 3:
 

@@ -22,12 +22,12 @@ pre = "<b> 1.8. </b>"
 | No. | Task Description | Start Date | Completion Date |
 |---|---|---|---|
 | 1 | Study the concept of CI/CD and the differences between Continuous Integration, Continuous Delivery, and Continuous Deployment. | 02/11/2026 | 02/11/2026 |
-| 2 | Explore AWS CodeCommit and its role in managing and storing project source code. | 02/11/2026 | 02/11/2026 |
-| 3 | Explore AWS CodeBuild, the build process, and the use of the buildspec.yml file. | 02/11/2026 | 02/11/2026 |
-| 4 | Explore AWS CodeDeploy and its mechanism for automatically deploying applications to EC2 instances. | 02/11/2026 | 02/11/2026 |
-| 5 | Study AWS CodePipeline and how it connects Source, Build, and Deploy stages into a pipeline. | 02/11/2026 | 02/11/2026 |
-| 6 | Follow the workshop to build a pipeline for deploying an application to EC2; monitor its execution and verify the deployment results. | 02/11/2026 | 02/11/2026 |
-| 7 | Learn how to monitor pipeline execution, review error information, and identify possible causes when a deployment stage fails. | 02/11/2026 | 02/11/2026 |
+| 2 | Explore AWS CodeCommit and its role in managing and storing project source code. | 03/11/2026 | 03/11/2026 |
+| 3 | Explore AWS CodeBuild, the build process, and the use of the buildspec.yml file. | 04/11/2026 | 04/11/2026 |
+| 4 | Explore AWS CodeDeploy and its mechanism for automatically deploying applications to EC2 instances. | 05/11/2026 | 05/11/2026 |
+| 5 | Study AWS CodePipeline and how it connects Source, Build, and Deploy stages into a pipeline. | 06/11/2026 | 06/11/2026 |
+| 6 | Follow the workshop to build a pipeline for deploying an application to EC2; monitor its execution and verify the deployment results. | 07/11/2026 | 07/11/2026 |
+| 7 | Learn how to monitor pipeline execution, review error information, and identify possible causes when a deployment stage fails. | 08/11/2026 | 08/11/2026 |
 
 ## 3. Achievements
 

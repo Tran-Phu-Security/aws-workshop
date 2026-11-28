@@ -23,12 +23,12 @@ pre = "<b> 1.11. </b>"
 | STT | Nội dung công việc | Ngày bắt đầu | Ngày hoàn thành |
 |---|---|---|---|
 | 1 | Tìm hiểu khái niệm Containerization, sự khác biệt cơ bản giữa Container và Virtual Machine (VM). | 23/11/2026 | 23/11/2026 |
-| 2 | Tìm hiểu Docker và các thành phần chính như Docker Engine, Docker Image, Container và Dockerfile. | 23/11/2026 | 23/11/2026 |
-| 3 | Tìm hiểu quy trình xây dựng Docker Image từ Dockerfile, khởi chạy Container và quản lý các Container cơ bản. | 23/11/2026 | 23/11/2026 |
-| 4 | Tìm hiểu Amazon ECR, Repository và cách lưu trữ, quản lý Docker Images trên AWS. | 23/11/2026 | 23/11/2026 |
-| 5 | Tìm hiểu Amazon ECS và các thành phần quan trọng như Cluster, Task Definition, Task và Service. | 23/11/2026 | 23/11/2026 |
-| 6 | Tìm hiểu cách kết hợp Docker và Amazon ECR để chuẩn bị Container Image phục vụ triển khai trên ECS. | 23/11/2026 | 23/11/2026 |
-| 7 | Khảo sát quy trình triển khai và quản lý ứng dụng container trên Amazon ECS; tìm hiểu cách theo dõi trạng thái Task và Service. | 23/11/2026 | 23/11/2026 |
+| 2 | Tìm hiểu Docker và các thành phần chính như Docker Engine, Docker Image, Container và Dockerfile. | 24/11/2026 | 24/11/2026 |
+| 3 | Tìm hiểu quy trình xây dựng Docker Image từ Dockerfile, khởi chạy Container và quản lý các Container cơ bản. | 25/11/2026 | 25/11/2026 |
+| 4 | Tìm hiểu Amazon ECR, Repository và cách lưu trữ, quản lý Docker Images trên AWS. | 26/11/2026 | 26/11/2026 |
+| 5 | Tìm hiểu Amazon ECS và các thành phần quan trọng như Cluster, Task Definition, Task và Service. | 27/11/2026 | 27/11/2026 |
+| 6 | Tìm hiểu cách kết hợp Docker và Amazon ECR để chuẩn bị Container Image phục vụ triển khai trên ECS. | 28/11/2026 | 28/11/2026 |
+| 7 | Khảo sát quy trình triển khai và quản lý ứng dụng container trên Amazon ECS; tìm hiểu cách theo dõi trạng thái Task và Service. | 29/11/2026 | 29/11/2026 |
 
 ## 3. Kết quả đạt được
 

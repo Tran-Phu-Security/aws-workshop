@@ -1,6 +1,6 @@
 ﻿---
 title: "Week 12: Exploring AWS Security and Governance"
-date: 2026-11-30
+date: 2026-11-28
 weight: 12
 chapter: false
 pre: " <b> 1.12. </b> "
