@@ -21,7 +21,7 @@ chapter: false
 
   **Major:** Information Assurance
 
-  **Class:** FALL2026
+  **Class:** FCAJ - FPT - Season 4
 
   **Internship Company:** Amazon Web Services Viet Nam Company Limited
 
