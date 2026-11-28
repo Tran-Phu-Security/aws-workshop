@@ -55,4 +55,4 @@ Workshop bám đúng mã nguồn hiện tại, nên có vài giới hạn bạn 
 + SPF, DKIM, DMARC được đọc từ header email bạn dán vào, hệ thống không tự tra DNS.
 + Chưa có xuất báo cáo PDF và chưa có đăng nhập người dùng.
 
-![Kiến trúc Trust Check](/images/5-Workshop/5.1-Workshop-overview/trust_check_architecture.png)
+![Kiến trúc Trust Check](/aws-workshop/images/5-Workshop/5.1-Workshop-overview/trust_check_architecture.png)

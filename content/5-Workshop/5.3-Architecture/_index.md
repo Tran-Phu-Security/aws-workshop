@@ -10,7 +10,7 @@ pre : " <b> 5.3. </b> "
 
 Trust Check is an event-driven serverless system. A scan request passes through API Gateway to an ingest Lambda, is placed on an SQS queue for workers to process asynchronously, and the result is stored in DynamoDB for the web frontend to query.
 
-![Trust Check architecture overview](/images/5-Workshop/5.3-Architecture/architecture-overview.png)
+![Trust Check architecture overview](/aws-workshop/images/5-Workshop/5.3-Architecture/architecture-overview.png)
 
 #### Components
 
@@ -32,7 +32,7 @@ The Lambda functions use Python 3.12 on the arm64 architecture. The two workers 
 
 #### Data flow
 
-![Data flow of a scan](/images/5-Workshop/5.3-Architecture/data-flow.png)
+![Data flow of a scan](/aws-workshop/images/5-Workshop/5.3-Architecture/data-flow.png)
 
 1. The web frontend sends `POST /scan` with a `type` of `link`, `email` or `file`, together with a `payload`.
 2. API Gateway forwards the request to `IngestLambda`. The function validates the input and returns a `400` error if it is invalid.

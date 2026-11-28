@@ -47,7 +47,7 @@ Cổng phải là `8000` và địa chỉ phải là `localhost`, vì CORS của
 
 Nếu trình duyệt vẫn hiện bản cũ của trang, nhấn `Ctrl + F5` để tải lại không dùng bộ nhớ đệm.
 
-![Giao diện Trust Check](/images/5-Workshop/5.4-Lab-Guide/5.4.9-frontend/frontend-home.png)
+![Giao diện Trust Check](/aws-workshop/images/5-Workshop/5.4-Lab-Guide/5.4.9-frontend/frontend-home.png)
 
 #### Giao diện cung cấp
 

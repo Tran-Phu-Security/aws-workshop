@@ -17,7 +17,7 @@ Open PowerShell, change to the `backend` folder of the source code cloned in sec
 
 The test suite needs no network connection or AWS account. A successful run ends with the line `Ran ... tests` followed by `OK`.
 
-![Test suite results](/images/5-Workshop/5.4-Lab-Guide/5.4.1-source/unittest-ok.png)
+![Test suite results](/aws-workshop/images/5-Workshop/5.4-Lab-Guide/5.4.1-source/unittest-ok.png)
 
 The output may contain `Traceback` lines. These are logs from error cases that the tests trigger on purpose and are not real failures. The result is determined by the last line.
 

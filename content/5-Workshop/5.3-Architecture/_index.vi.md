@@ -10,7 +10,7 @@ pre : " <b> 5.3. </b> "
 
 Trust Check là hệ thống serverless hướng sự kiện. Yêu cầu quét đi qua API Gateway tới một Lambda tiếp nhận, được đưa vào hàng đợi SQS để các worker xử lý bất đồng bộ, và kết quả được lưu vào DynamoDB để giao diện web truy vấn lại.
 
-![Kiến trúc tổng quan của Trust Check](/images/5-Workshop/5.3-Architecture/architecture-overview.png)
+![Kiến trúc tổng quan của Trust Check](/aws-workshop/images/5-Workshop/5.3-Architecture/architecture-overview.png)
 
 #### Các thành phần
 
@@ -32,7 +32,7 @@ Các Lambda dùng Python 3.12 trên kiến trúc arm64. Hai worker có thể b�
 
 #### Luồng dữ liệu
 
-![Luồng dữ liệu của một lần quét](/images/5-Workshop/5.3-Architecture/data-flow.png)
+![Luồng dữ liệu của một lần quét](/aws-workshop/images/5-Workshop/5.3-Architecture/data-flow.png)
 
 1. Giao diện web gửi `POST /scan` với `type` là `link`, `email` hoặc `file`, kèm `payload`.
 2. API Gateway chuyển yêu cầu tới `IngestLambda`. Hàm kiểm tra đầu vào và trả lỗi `400` nếu không hợp lệ.

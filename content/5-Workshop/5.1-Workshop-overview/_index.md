@@ -57,4 +57,4 @@ The workshop follows the current source code, so a few limits apply:
 + SPF, DKIM and DMARC are read from the email headers you paste in. The system does not query DNS itself.
 + There is no PDF report export and no user login.
 
-![Trust Check architecture](/images/5-Workshop/5.1-Workshop-overview/trust_check_architecture.png)
+![Trust Check architecture](/aws-workshop/images/5-Workshop/5.1-Workshop-overview/trust_check_architecture.png)

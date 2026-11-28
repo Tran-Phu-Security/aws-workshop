@@ -40,7 +40,7 @@ A result also has `confidence` (`HIGH`, `MEDIUM`, `LOW`) showing how many extern
 
 Expected result: risk level `DANGEROUS`. Typical reasons: the domain contains the name "paypal" but is not the official site, it contains sensitive keywords (login, update, security), the domain has too many hyphens, and HTTPS is not used.
 
-![Link scan result](/images/5-Workshop/5.5-Testing-Validation/5.5.1-functional/url-result.png)
+![Link scan result](/aws-workshop/images/5-Workshop/5.5-Testing-Validation/5.5.1-functional/url-result.png)
 
 Control sample: scan `https://example.com`. The expected result is `SAFE`.
 
@@ -51,7 +51,7 @@ Control sample: scan `https://example.com`. The expected result is `SAFE`.
 
 Expected result: risk level `DANGEROUS`. Typical reasons: the sender domain impersonates a brand, the display name impersonates another organisation, the email fails the DMARC policy, it contains pressure phrases, and the reply address differs from the sender domain.
 
-![Email scan result](/images/5-Workshop/5.5-Testing-Validation/5.5.1-functional/email-result.png)
+![Email scan result](/aws-workshop/images/5-Workshop/5.5-Testing-Validation/5.5.1-functional/email-result.png)
 
 Control sample: scan the content of `backend\samples\email_binh_thuong.txt`. The expected result is `SAFE`.
 
@@ -62,7 +62,7 @@ Control sample: scan the content of `backend\samples\email_binh_thuong.txt`. The
 
 Expected result: risk level `SUSPICIOUS`, with the reason that the file has a `.pdf` extension but is actually an executable program.
 
-![File scan result](/images/5-Workshop/5.5-Testing-Validation/5.5.1-functional/file-result.png)
+![File scan result](/aws-workshop/images/5-Workshop/5.5-Testing-Validation/5.5.1-functional/file-result.png)
 
 Control sample: scan the file `ghi_chu.txt`. The expected result is `SAFE`.
 

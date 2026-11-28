@@ -40,7 +40,7 @@ Kết quả còn có `confidence` (`HIGH`, `MEDIUM`, `LOW`) cho biết bao nhiê
 
 Kết quả mong đợi: mức rủi ro `DANGEROUS`. Các lý do thường gặp: tên miền chứa tên "paypal" nhưng không phải trang chính thức, chứa từ khóa nhạy cảm (login, update, security), tên miền có quá nhiều dấu gạch ngang, không dùng HTTPS.
 
-![Kết quả quét link](/images/5-Workshop/5.5-Testing-Validation/5.5.1-functional/url-result.png)
+![Kết quả quét link](/aws-workshop/images/5-Workshop/5.5-Testing-Validation/5.5.1-functional/url-result.png)
 
 Mẫu đối chứng: quét `https://example.com`. Kết quả mong đợi là `SAFE`.
 
@@ -51,7 +51,7 @@ Mẫu đối chứng: quét `https://example.com`. Kết quả mong đợi là `
 
 Kết quả mong đợi: mức rủi ro `DANGEROUS`. Các lý do thường gặp: tên miền người gửi giả mạo thương hiệu, tên hiển thị giả danh, email vi phạm chính sách xác thực DMARC, có cụm từ gây áp lực, địa chỉ trả lời khác tên miền người gửi.
 
-![Kết quả quét email](/images/5-Workshop/5.5-Testing-Validation/5.5.1-functional/email-result.png)
+![Kết quả quét email](/aws-workshop/images/5-Workshop/5.5-Testing-Validation/5.5.1-functional/email-result.png)
 
 Mẫu đối chứng: quét nội dung file `backend\samples\email_binh_thuong.txt`. Kết quả mong đợi là `SAFE`.
 
@@ -62,7 +62,7 @@ Mẫu đối chứng: quét nội dung file `backend\samples\email_binh_thuong.t
 
 Kết quả mong đợi: mức rủi ro `SUSPICIOUS`, với lý do tệp mang đuôi `.pdf` nhưng thực chất là chương trình thực thi.
 
-![Kết quả quét file](/images/5-Workshop/5.5-Testing-Validation/5.5.1-functional/file-result.png)
+![Kết quả quét file](/aws-workshop/images/5-Workshop/5.5-Testing-Validation/5.5.1-functional/file-result.png)
 
 Mẫu đối chứng: quét file `ghi_chu.txt`. Kết quả mong đợi là `SAFE`.
 

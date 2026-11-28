@@ -6,7 +6,7 @@ chapter : false
 pre : " <b> 5.3. </b> "
 ---
 
-![Kiến trúc Trust Check](/images/5-Workshop/5.3-Architecture/trust_check_architecture.png)
+![Kiến trúc Trust Check](/aws-workshop/images/5-Workshop/5.3-Architecture/trust_check_architecture.png)
 
 #### Ý tưởng chính
 

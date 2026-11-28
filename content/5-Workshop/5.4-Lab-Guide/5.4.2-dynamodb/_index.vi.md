@@ -8,7 +8,7 @@ pre : " <b> 5.4.2. </b> "
 
 Hệ thống dùng hai bảng DynamoDB: `PhishingScanJobs` lưu từng job quét và kết quả, `PhishingScanCache` lưu kết quả để tái sử dụng trong 24 giờ.
 
-![Cấu trúc hai bảng DynamoDB](/images/5-Workshop/5.4-Lab-Guide/5.4.2-dynamodb/dynamodb-schema.png)
+![Cấu trúc hai bảng DynamoDB](/aws-workshop/images/5-Workshop/5.4-Lab-Guide/5.4.2-dynamodb/dynamodb-schema.png)
 
 #### Tạo bảng PhishingScanJobs
 

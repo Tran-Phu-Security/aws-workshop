@@ -8,7 +8,7 @@ pre : " <b> 5.4.2. </b> "
 
 The system uses two DynamoDB tables: `PhishingScanJobs` stores each scan job and its result, and `PhishingScanCache` stores results for reuse during 24 hours.
 
-![Structure of the two DynamoDB tables](/images/5-Workshop/5.4-Lab-Guide/5.4.2-dynamodb/dynamodb-schema.png)
+![Structure of the two DynamoDB tables](/aws-workshop/images/5-Workshop/5.4-Lab-Guide/5.4.2-dynamodb/dynamodb-schema.png)
 
 #### Create the PhishingScanJobs table
 

@@ -6,7 +6,7 @@ chapter : false
 pre : " <b> 5.3. </b> "
 ---
 
-![Trust Check architecture](/images/5-Workshop/5.3-Architecture/trust_check_architecture.png)
+![Trust Check architecture](/aws-workshop/images/5-Workshop/5.3-Architecture/trust_check_architecture.png)
 
 #### The main idea
 

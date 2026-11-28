@@ -47,7 +47,7 @@ The port must be `8000` and the address must be `localhost`, because the CORS co
 
 If the browser still shows an old version of the page, press `Ctrl + F5` to reload without the cache.
 
-![Trust Check interface](/images/5-Workshop/5.4-Lab-Guide/5.4.9-frontend/frontend-home.png)
+![Trust Check interface](/aws-workshop/images/5-Workshop/5.4-Lab-Guide/5.4.9-frontend/frontend-home.png)
 
 #### What the interface provides
 

@@ -17,7 +17,7 @@ Mở PowerShell, di chuyển vào thư mục `backend` của mã nguồn đã cl
 
 Bộ kiểm thử không yêu cầu kết nối mạng hay tài khoản AWS. Kết quả thành công kết thúc bằng dòng `Ran ... tests` và `OK`.
 
-![Kết quả chạy bộ kiểm thử](/images/5-Workshop/5.4-Lab-Guide/5.4.1-source/unittest-ok.png)
+![Kết quả chạy bộ kiểm thử](/aws-workshop/images/5-Workshop/5.4-Lab-Guide/5.4.1-source/unittest-ok.png)
 
 Trong kết quả có thể xuất hiện các dòng `Traceback`. Đây là log của những ca kiểm thử lỗi được thiết kế có chủ đích, không phải lỗi thật. Kết quả được xác định bởi dòng cuối cùng.
 
