@@ -10,7 +10,7 @@ pre : " <b> 5.3. </b> "
 
 Trust Check is an event-driven serverless system. A scan request passes through API Gateway to an ingest Lambda, is placed on an SQS queue for workers to process asynchronously, and the result is stored in DynamoDB for the web frontend to query.
 
-![Trust Check architecture overview](/aws-workshop/images/5-Workshop/5.3-Architecture/architecture-overview.png)
+![Trust Check architecture overview](/aws-workshop/images/5-Workshop/5.3-Architecture/trust_check_architecture.png)
 
 #### Components
 
